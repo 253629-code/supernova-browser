@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernova Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particle-background"></div>
+    
+    <div class="browser-container">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="nav-buttons">
+                <button id="backBtn" class="nav-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                </button>
+                <button id="forwardBtn" class="nav-btn" title="Forward">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"></path>
+                    </svg>
+                </button>
+                <button id="refreshBtn" class="nav-btn" title="Refresh">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36M20.49 15a9 9 0 0 1-14.85 3.36"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-bar" 
+                    placeholder="Search or enter URL..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+            
+            <div class="logo-container">
+                <div class="supernova-logo">✦ Supernova</div>
+            </div>
+        </div>
+        
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <div class="home-page">
+                <div class="supernova-hero">
+                    <h1>✦ Supernova</h1>
+                    <p>A Next-Generation Browser Experience</p>
+                </div>
+                <div class="search-box-large">
+                    <input 
+                        type="text" 
+                        id="heroSearchInput" 
+                        class="hero-search" 
+                        placeholder="Search the web..."
+                    >
+                    <button id="heroSearchBtn" class="hero-search-btn">Search</button>
+                </div>
+                <div class="quick-links">
+                    <a href="#" class="quick-link" data-url="https://www.google.com">Google</a>
+                    <a href="#" class="quick-link" data-url="https://www.github.com">GitHub</a>
+                    <a href="#" class="quick-link" data-url="https://www.youtube.com">YouTube</a>
+                    <a href="#" class="quick-link" data-url="https://www.stackoverflow.com">Stack Overflow</a>
+                </div>
+            </div>
+            <div id="iframeContainer" class="iframe-container" style="display:none;">
+                <iframe id="contentFrame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="particles.js"></script>
+    <script src="browser.js"></script>
+</body>
+</html>

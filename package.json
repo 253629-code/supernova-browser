@@ -1,0 +1,23 @@
+{
+  "name": "supernova-browser",
+  "version": "1.0.0",
+  "description": "Custom browser with Supernova branding and particle effects",
+  "main": "browser.js",
+  "scripts": {
+    "start": "npx http-server -c-1 -o",
+    "dev": "npx live-server",
+    "build": "echo 'This is a static site, no build needed'"
+  },
+  "keywords": [
+    "browser",
+    "supernova",
+    "particles",
+    "web"
+  ],
+  "author": "253629-code",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "live-server": "^1.2.1"
+  }
+}
