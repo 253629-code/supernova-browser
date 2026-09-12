@@ -1,23 +1,33 @@
 {
   "name": "supernova-browser",
-  "version": "1.0.0",
-  "description": "Custom browser with Supernova branding and particle effects",
-  "main": "browser.js",
+  "version": "2.0.0",
+  "description": "Custom browser with Supernova branding, particle effects, and Ultraviolet web proxy",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "npx http-server -c-1 -o",
-    "dev": "npx live-server",
-    "build": "echo 'This is a static site, no build needed'"
+    "start": "node server.js",
+    "dev": "node server.js --dev",
+    "build": "echo 'Building Supernova Browser with proxy support'"
   },
   "keywords": [
     "browser",
     "supernova",
     "particles",
+    "proxy",
+    "ultraviolet",
+    "epoxy",
     "web"
   ],
   "author": "253629-code",
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "@titanium/ultraviolet": "^2.0.0",
+    "@mercuryworkshop/epoxy-transport": "^1.0.0",
+    "dotenv": "^16.0.3"
+  },
   "devDependencies": {
-    "http-server": "^14.1.0",
-    "live-server": "^1.2.1"
+    "nodemon": "^3.0.1"
   }
 }
